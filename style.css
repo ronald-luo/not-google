@@ -1,0 +1,146 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #222;
+}
+
+.header {
+    display: inline-block;
+}
+
+.box li {
+    left: 60px;
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+    display: inline-block;
+    margin: -3px;
+}
+
+.box::before {
+    top: 2em;
+    content: 'not';
+    position: relative;
+    font-family: arial;
+    font-size: 50px;
+    color: grey;
+
+}
+
+.search {
+    display: grid;
+    place-content: center;
+    height: 90vh;
+}
+
+.sub-search-btn {
+    left: -40px;
+    display: grid;
+    place-content: center;
+    padding-top: 50px;
+    position: relative;
+}
+
+.sub-search-btn ul a {
+    color: #3c4043;
+    font-size: 15.5px;
+}
+
+.sub-search-btn:before {
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    left: 10.7vw;
+    top: 3.8vw;
+    background-color: #f8f9fa;
+    z-index: -1;
+}
+.sub-search-btn:after {
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 135px;
+    right: 8.5vw;
+    top: 3.8vw;
+    background-color: #f8f9fa;
+    z-index: -1;
+}
+
+.footer {
+    display: inline-block;
+}
+
+.left {
+    position: absolute;
+    left: 0vw;
+}
+
+.right {
+    position: absolute;
+    right: 5vw;
+}
+
+.search button {
+    background: transparent;
+    position: relative;
+    left: -90%;
+    top: 2px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    color: #dadce0;
+} 
+
+    /* styling search bar */
+.search input[type=text]{
+    width:500px;
+    height:35px;
+    border-radius: 100px;
+    border-color: #f2f2f2;
+    border-width: 0.5px;
+    outline: none;
+    text-indent: 55px;
+    font-size: 17px;
+}
+        
+.search{
+    margin:7px;
+}
+
+.footer-box{
+    overflow-x: hidden;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    background-color: #dadce0;
+    height: 5em;
+    width: 100vw;
+}
+
+.header button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    margin: 0 0 0 30px;
+    color: #5f6368;
+}
+
+.box {
+    display: inline-block;
+    margin-bottom: 50px;
+}
